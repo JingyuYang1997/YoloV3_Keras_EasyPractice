@@ -6,7 +6,7 @@
 
 * **Win10**, ```tensorflow-gpu 1.8.0```, ```cuda 9.0``` ```keras 2.2.4```, ```python 3.6``` on ```GTX1060``` 
 
-* **Ubuntu 16.04**, ```tensorflow-gpu 1.8.0```, ```keras 2.2.4```,```python3```.6, ```cuda-9.0``` on ```GTX1080```
+* **Ubuntu 16.04**, ```tensorflow-gpu 1.8.0```, ```keras 2.2.4```,```python3.6```, ```cuda-9.0``` on ```GTX1080```
 
   ***!!!*** There is a tiny difference in codes you should pay attention to when tested on different platforms: the path ```data/VOC2007/Images/1.jpg``` in ubuntu should be ```data\\VOC2007\\Images\\1.jpg``` in windows. Related codes such as ```img_id = img.split('\\')[-1].split('.')[0]``` should also be corrected. That's very easy to do, right? Here I offer the codes executable in windows
 
@@ -17,7 +17,7 @@ And this repo is mainly modified from [qqwweee/keras-yolo3](https://github.com/q
 
 ## Establish Your Own Dataset
 
-A popular tool to build our own dataset is [*Labelimg*](https://github.com/tzutalin/labelImg). Here it's not our focus  how to use it, though it is very easy. With this tool, we can get the dataset including images and the corresponding ```.xml``` files. In my test, I referred to the online dataset [*Pascal VOC2007*](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar) and only left the images in ```VOCdevit/VOC2007/JPEGImages/``` and ```.xml``` files in ```VOCdevit/VOC2007/Annotations/```. Build the structure like below(The same to your own dataset):
+A popular tool to build our own dataset is [*Labelimg*](https://github.com/tzutalin/labelImg). Here it's not our focus how to use it, though it is very easy. With this tool, we can get the dataset including images and the corresponding ```.xml``` files. In my test, I referred to the online dataset [*Pascal VOC2007*](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar) and only left the images in ```VOCdevit/VOC2007/JPEGImages/``` and ```.xml``` files in ```VOCdevit/VOC2007/Annotations/```. Build the structure like below(The same to your own dataset):
 
 ![](./figures/data_struct.png) 
 
