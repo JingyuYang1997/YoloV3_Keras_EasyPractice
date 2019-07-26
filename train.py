@@ -33,7 +33,7 @@ def _main():
             freeze_body=2)
     else:
         model = create_model(input_shape, anchors, num_classes,
-            freeze_body=2, weights_path=cfg.model_save_path+'trained_weights_stage_1.h5') # make sure you know what you freeze
+            freeze_body=2) # make sure you know what you freeze
 
     logging = TensorBoard(log_dir=log_dir)
     checkpoint = ModelCheckpoint(log_dir + 'ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5',
