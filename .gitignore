@@ -1,0 +1,5 @@
+/.idea/
+*pyc
+default_anchors.txt
+/logs/
+*.h5
